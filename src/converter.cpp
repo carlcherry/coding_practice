@@ -24,7 +24,8 @@ long _convert_to_long(const char *input, long val)
 	else
 	{
 		char currentChar = *input;
-		return _convert_to_long(++input, val + (long)((int)(currentChar - 48) * (pow(10, index-1))));
+		// Since 0 is 0x30 on the ASCII chart - subtract 0x30 from this character.
+		return _convert_to_long(++input, val + (long)((int)(currentChar - 0x30) * (pow(10, index-1))));
 	}
 }
 
