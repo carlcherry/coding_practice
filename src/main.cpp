@@ -16,5 +16,5 @@ int main(int argc, char **argv)
     std::cout << "Result of atol with -1 is " << string::converter::atol("-1") << std::endl;
     std::cout << "Result of atol with 1 is " << string::converter::atol("1") << std::endl;
 
-	return 0;
+    return 0;
 }

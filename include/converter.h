@@ -12,10 +12,10 @@ namespace string {
 
 class converter {
 public:
-	converter();
-	virtual ~converter();
+    converter();
+    virtual ~converter();
 
-	static long atol(const char* input);
+    static long atol(const char* input);
 };
 
 } /* namespace string */
