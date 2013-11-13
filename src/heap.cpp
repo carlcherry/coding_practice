@@ -56,76 +56,76 @@ heap::~heap()
 
 void heap::delete_heap()
 {
-	try
-	{
+    try
+    {
         if (heaparray) delete [] heaparray;
-	}
-	catch(...) {}
+    }
+    catch(...) {}
 }
 
 void heap::reserve(int maxSize)
 {
-	length = maxSize;
-	delete_heap();
-	heaparray = new int[length];
-	memset(heaparray, 0x00, length);
+    length = maxSize;
+    delete_heap();
+    heaparray = new int[length];
+    memset(heaparray, 0x00, length);
 }
 
 void heap::insert(int value)
 {
     // Verify that the heapsize is less than the array length
-	if (heapSize == length)
-		throw("heap is full");
+    if (heapSize == length)
+        throw("heap is full");
 
     heapSize++;
     int i = heapSize;
     while (heaparray[i/2] > value)
     {
-    	heaparray[i] = heaparray[i/2];
-    	i = i / 2;
+        heaparray[i] = heaparray[i/2];
+        i = i / 2;
     }
     heaparray[i] = value;
 }
 
 int heap::delete_max()
 {
-	if (heapSize == 0)
-		throw("heap is empty");
+    if (heapSize == 0)
+        throw("heap is empty");
 
-	// Capture the value at the root and decrement the heap size
-	int result = heaparray[1];
-	int valueToMove = heaparray[heapSize];
-	heapSize--;
+    // Capture the value at the root and decrement the heap size
+    int result = heaparray[1];
+    int valueToMove = heaparray[heapSize];
+    heapSize--;
 
-	// Now push the hole down until we find the place to insert valuetoMove
-	int i = 1;
-	bool done = false;
-	while (i * 2 <= heapSize && !done)
-	{
-		int child = i * 2;
-		if (child != heapSize)
-		{
-			// Figure out if the left or right child is the lower value
-			if (heaparray[child + 1] < heaparray[child])
-				child++;
-		}
+    // Now push the hole down until we find the place to insert valuetoMove
+    int i = 1;
+    bool done = false;
+    while (i * 2 <= heapSize && !done)
+    {
+        int child = i * 2;
+        if (child != heapSize)
+        {
+            // Figure out if the left or right child is the lower value
+            if (heaparray[child + 1] < heaparray[child])
+                child++;
+        }
 
-		if (valueToMove > heaparray[child])
-		{
-			// percolate and keep looking
-			heaparray[i] = heaparray[child];
-			i = child;
-		}
-		else
-		{
-			done = true;
-		}
-	}
+        if (valueToMove > heaparray[child])
+        {
+            // percolate and keep looking
+            heaparray[i] = heaparray[child];
+            i = child;
+        }
+        else
+        {
+            done = true;
+        }
+    }
 
-	heaparray[i] = valueToMove;
+    heaparray[i] = valueToMove;
 
-	// return the result
-	return result;
+    // return the result
+    return result;
 }
 
 } // end namespace cc

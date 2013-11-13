@@ -95,7 +95,7 @@ long converter::atol(const char* input) {
 
 std::string converter::ltoa(int32_t input)
 {
-	uint32_t tmpInput = (uint32_t)input;
+    uint32_t tmpInput = (uint32_t)input;
     char buffer[12]; // -2147483648
     int index = 10;
     buffer[11] = 0x00; // terminate the string

@@ -14,12 +14,12 @@ void testTree();
 
 class bst {
     class node {
-    	friend class bst;
+        friend class bst;
 
-    	int _data;
-    	node *left;
-    	node *right;
-    	node(int data) : _data(data), left(0), right(0) {}
+        int _data;
+        node *left;
+        node *right;
+        node(int data) : _data(data), left(0), right(0) {}
     };
     node *_root;
 

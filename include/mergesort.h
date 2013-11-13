@@ -10,7 +10,7 @@
 
 namespace cc
 {
-    void testMergeSort();
-    void merge_sort(int *arrayToSort, int low, int high);
+void testMergeSort();
+void merge_sort(int *arrayToSort, int low, int high);
 } // end namespace cc
 #endif /* MERGESORT_H_ */

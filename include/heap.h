@@ -16,17 +16,17 @@ void testHeap();
 class heap
 {
 public:
-	heap();
-	virtual ~heap();
+    heap();
+    virtual ~heap();
     void reserve(int maxSize);
-	void insert(int i);
-	int delete_max();
+    void insert(int i);
+    int delete_max();
 
 private:
     void delete_heap();
-	int length;
-	int *heaparray;
-	int heapSize;
+    int length;
+    int *heaparray;
+    int heapSize;
 };
 
 } // end namespace cc

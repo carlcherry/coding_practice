@@ -12,23 +12,23 @@ namespace cc
 
 void printArray(std::string message, int *inputArray, int start, int end)
 {
-	if (message.length() > 0)
-	    std::cout << message << std::endl;
-	for (int index = start; index <= end; index++)
-	{
-		std::cout << inputArray[index] << " ";
-	}
-	std::cout << std::endl;
+    if (message.length() > 0)
+        std::cout << message << std::endl;
+    for (int index = start; index <= end; index++)
+    {
+        std::cout << inputArray[index] << " ";
+    }
+    std::cout << std::endl;
 }
 
 static char encoding_table[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
-                                'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
-                                'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-                                'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f',
-                                'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
-                                'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
-                                'w', 'x', 'y', 'z', '0', '1', '2', '3',
-                                '4', '5', '6', '7', '8', '9', '+', '/'};
+        'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+        'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+        'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f',
+        'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+        'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+        'w', 'x', 'y', 'z', '0', '1', '2', '3',
+        '4', '5', '6', '7', '8', '9', '+', '/'};
 
 std::string base64_encode(const unsigned char* input, int length)
 {

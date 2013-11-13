@@ -13,80 +13,80 @@ namespace cc
 
 bst::node* bst::findNode(const int data, node* tree)
 {
-	// Check for a null node
-	if (!tree)
-		return 0;
+    // Check for a null node
+    if (!tree)
+        return 0;
 
     /// See if this is our node
-	if (data == tree->_data)
-		return tree;
-	else if (data < tree->_data)
-		return findNode(data, tree->left);
+    if (data == tree->_data)
+        return tree;
+    else if (data < tree->_data)
+        return findNode(data, tree->left);
     else
-    	return findNode(data, tree->right);
+        return findNode(data, tree->right);
 }
 
 void bst::print_inorder()
 {
-	if (_root == 0)
-	{
-		std::cout << "BST tree is empty" << std::endl;
-		return;
-	}
+    if (_root == 0)
+    {
+        std::cout << "BST tree is empty" << std::endl;
+        return;
+    }
 
     print_inorder(_root);
 }
 
 void bst::print_inorder(node* tree)
 {
-	if (tree == 0)
-		return;
-	print_inorder(tree->left);
-	std::cout << "Node value: " << tree->_data << std::endl;
-	print_inorder(tree->right);
+    if (tree == 0)
+        return;
+    print_inorder(tree->left);
+    std::cout << "Node value: " << tree->_data << std::endl;
+    print_inorder(tree->right);
 }
 
 void bst::insert(const int data)
 {
-	// Edge case - tree is empty
-	if (_root == 0)
-		_root = new node(data);
+    // Edge case - tree is empty
+    if (_root == 0)
+        _root = new node(data);
 
-	// Normal case - start at root and find the place to insert the node
-	node *currentNode = _root;
-	bool found = false;
-	while (!found && currentNode)
-	{
+    // Normal case - start at root and find the place to insert the node
+    node *currentNode = _root;
+    bool found = false;
+    while (!found && currentNode)
+    {
         if (currentNode->_data == data)
-        	return; // Quit now - node is already in the tree
+            return; // Quit now - node is already in the tree
 
         // Check the left tree
         if (data < currentNode->_data)
         {
-        	if (currentNode->left)
-        	{
-        		currentNode = currentNode->left;
-        	}
-        	else
-        	{
-        		found = true;
-        		currentNode->left = new node(data);
-        	}
+            if (currentNode->left)
+            {
+                currentNode = currentNode->left;
+            }
+            else
+            {
+                found = true;
+                currentNode->left = new node(data);
+            }
         }
         else
         {
-        	// We need to check the right tree
-        	if (currentNode->right)
-        	{
-        		currentNode = currentNode->right;
-        	}
-        	else
-        	{
-        		found = true;
-        		currentNode->right = new node(data);
-        	}
+            // We need to check the right tree
+            if (currentNode->right)
+            {
+                currentNode = currentNode->right;
+            }
+            else
+            {
+                found = true;
+                currentNode->right = new node(data);
+            }
         }
-	}
+    }
 }
 
 bool bst::find(const int data, int& outData)
@@ -95,37 +95,37 @@ bool bst::find(const int data, int& outData)
     node* foundNode = findNode(data, _root);
     if (foundNode)
     {
-    	std::cout << "Node found..." << std::endl;
-    	return true;
+        std::cout << "Node found..." << std::endl;
+        return true;
     }
     else
     {
-    	std::cout << "Node NOT found..." << std::endl;
-    	return false;
+        std::cout << "Node NOT found..." << std::endl;
+        return false;
     }
 }
 
 void bst::insertR(const int data)
 {
-	// Call the recursive private method to add the node
-	insertR(data, _root);
+    // Call the recursive private method to add the node
+    insertR(data, _root);
 }
 
 void bst::insertR(const int data, node*& tree)
 {
     // Base case - this is where we actually add the node and end
-	if (tree == 0)
-	{
-		tree = new node(data);
-	}
-	else
-	{
-		if (data < tree->_data)
-			insertR(data, tree->left);
-		else if (data > tree->_data)
-			insertR(data, tree->right);
-		// Else do nothing as this item is already in the tree
-	}
+    if (tree == 0)
+    {
+        tree = new node(data);
+    }
+    else
+    {
+        if (data < tree->_data)
+            insertR(data, tree->left);
+        else if (data > tree->_data)
+            insertR(data, tree->right);
+        // Else do nothing as this item is already in the tree
+    }
 }
 
 void testTree()

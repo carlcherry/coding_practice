@@ -15,24 +15,24 @@ void testList();
 
 class list
 {
-	class listnode
-	{
-		friend class list;
-		int _data;
-		listnode *prev;
-		listnode *next;
-		listnode(int data, listnode* p, listnode* n);
-	};
-	listnode *_head;
-	listnode *_tail;
+    class listnode
+    {
+        friend class list;
+        int _data;
+        listnode *prev;
+        listnode *next;
+        listnode(int data, listnode* p, listnode* n);
+    };
+    listnode *_head;
+    listnode *_tail;
 public:
-	list();
-	~list();
+    list();
+    ~list();
 
-	bool empty() const;
+    bool empty() const;
 
-	void push_back(int data);
-	void push_front(int data);
+    void push_back(int data);
+    void push_front(int data);
     int pop_back();
     int pop_front();
 };

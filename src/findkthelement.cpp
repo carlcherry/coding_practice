@@ -56,48 +56,48 @@ int kth_element(int *input, int left, int right, int k)
     }
     else
     {
-    	// Left has crossed right - at least log it and see if this happens
-    	std::cout << "Left <= right" << std::endl;
+        // Left has crossed right - at least log it and see if this happens
+        std::cout << "Left <= right" << std::endl;
     }
 }
 
 void findKthElementUsingArray(int* input, int length, int k)
 {
-   int value = 0;
-   int start = k - 5;
-   int end = k + 5;
-   if (start < 0) start = 0;
-   if (end > (length - 1)) end = length - 1;
-   std::cout << "kth_element before quicksort, k=" << k << ", value=" << input[k]<< std::endl;
-   cc::printArray("kth_element using quicksort - BEFORE", input, start,end);
-   value = kth_element(input, 0, length - 1, k);
-   cc::printArray("kth_element using quicksort - AFTER", input, start, end);
-   //cc::quicksort(input, 0, length - 1);
-   //cc::printArray("kth_element after fully sorted", input, 0, length - 1);
-   //std::nth_element(&input[0], &input[k], &input[length-1]);
-   //value = input[k];
-   std::cout << "kth_element found value: " << value << " index:" << k << std::endl;
+    int value = 0;
+    int start = k - 5;
+    int end = k + 5;
+    if (start < 0) start = 0;
+    if (end > (length - 1)) end = length - 1;
+    std::cout << "kth_element before quicksort, k=" << k << ", value=" << input[k]<< std::endl;
+    cc::printArray("kth_element using quicksort - BEFORE", input, start,end);
+    value = kth_element(input, 0, length - 1, k);
+    cc::printArray("kth_element using quicksort - AFTER", input, start, end);
+    //cc::quicksort(input, 0, length - 1);
+    //cc::printArray("kth_element after fully sorted", input, 0, length - 1);
+    //std::nth_element(&input[0], &input[k], &input[length-1]);
+    //value = input[k];
+    std::cout << "kth_element found value: " << value << " index:" << k << std::endl;
 }
 
 void findKthElementUsingSTL(std::vector<int> input, int k)
 {
-   int value = 0;
-   int start = k - 5;
-   int end = k + 5;
-   if (start < 0) start = 0;
-   int length = input.size();
-   if (end > (length - 1)) end = length - 1;
-   cc::printArray("kth_element using quicksort - BEFORE", &input[0], start,end);
-   std::nth_element(input.begin(), input.begin()+k, input.end());
-   cc::printArray("kth_element using quicksort - AFTER", &input[0], start, end);
-   value = input[k];
-   std::cout << "kth_element found value: " << value << " index:" << k << std::endl;
+    int value = 0;
+    int start = k - 5;
+    int end = k + 5;
+    if (start < 0) start = 0;
+    int length = input.size();
+    if (end > (length - 1)) end = length - 1;
+    cc::printArray("kth_element using quicksort - BEFORE", &input[0], start,end);
+    std::nth_element(input.begin(), input.begin()+k, input.end());
+    cc::printArray("kth_element using quicksort - AFTER", &input[0], start, end);
+    value = input[k];
+    std::cout << "kth_element found value: " << value << " index:" << k << std::endl;
 }
 
 void findKthElementTest(int k)
 {
-   int arr[] =  { 4, 0, 6, 6, 2, 5, 12, 20, 2, 18, 7, 5, 3, 1, 9, 8, 11 };
-   findKthElementUsingArray(arr, 10, k);
+    int arr[] =  { 4, 0, 6, 6, 2, 5, 12, 20, 2, 18, 7, 5, 3, 1, 9, 8, 11 };
+    findKthElementUsingArray(arr, 10, k);
 }
 
 void findKthElementTest(bool useSTL)
@@ -111,7 +111,7 @@ void findKthElement(int length, int k, bool useSTL)
 {
     if (useSTL)
     {
-    	std::cout << "Find the kth element using vector and std::nth_element, size: " << length << std::endl;
+        std::cout << "Find the kth element using vector and std::nth_element, size: " << length << std::endl;
         std::srand((unsigned int)time(0));
         std::vector<int> input;
         input.reserve(length);
@@ -120,12 +120,12 @@ void findKthElement(int length, int k, bool useSTL)
             input.push_back(std::rand() % length);
         }
         std::cout << "Start find process now..." << std::endl;
-    	findKthElementUsingSTL(input, k);
+        findKthElementUsingSTL(input, k);
     }
     else
     {
         // Create a large array and populate with random data
-    	std::cout << "Find the kth element using an array and quicksort, size: " << length << std::endl;
+        std::cout << "Find the kth element using an array and quicksort, size: " << length << std::endl;
         std::srand((unsigned int)time(0));
         int *input = new int[length];
         for (int i = 0; i < length; ++i)

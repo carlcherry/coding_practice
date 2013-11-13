@@ -12,17 +12,17 @@ namespace cc
 
 void testStack()
 {
-   int arr[] =  { 4, 0, 6, 6, 2, 5, 12, 20, 2, 18, 7, 5, 3, 1, 9, 8, 11 };
-   int length = sizeof(arr)/sizeof(int);
+    int arr[] =  { 4, 0, 6, 6, 2, 5, 12, 20, 2, 18, 7, 5, 3, 1, 9, 8, 11 };
+    int length = sizeof(arr)/sizeof(int);
 
-   cc::stack myIntStack;
-   for (int i = 0; i < length; ++i)
-   {
-      myIntStack.push(arr[i]);
-   }
+    cc::stack myIntStack;
+    for (int i = 0; i < length; ++i)
+    {
+        myIntStack.push(arr[i]);
+    }
 
-   while (!myIntStack.empty())
-      std::cout << myIntStack.pop() << std::endl;
+    while (!myIntStack.empty())
+        std::cout << myIntStack.pop() << std::endl;
 }
 
 
@@ -33,24 +33,24 @@ stack::node::node(int data, node *next)
 
 int stack::pop()
 {
-   if (!_head)
-      throw("stack is empty");
+    if (!_head)
+        throw("stack is empty");
 
-   int result = _head->_data;
-   node * temp = _head;
-   _head = _head->_next;
-   delete temp;
-   return result;
+    int result = _head->_data;
+    node * temp = _head;
+    _head = _head->_next;
+    delete temp;
+    return result;
 }
 
 void stack::push(int data)
 {
-   _head = new node(data, _head);
+    _head = new node(data, _head);
 }
 
 bool stack::empty()
 {
-   return (_head == 0);
+    return (_head == 0);
 }
 
 stack::stack()
@@ -60,17 +60,17 @@ stack::stack()
 
 stack::~stack()
 {
-   // Don't let exceptions leave the descructor
-   try
-   {
-      while (_head)
-      {
-         node * temp = _head;
-         _head = _head->_next;
-         delete temp;
-      }
-   }
-   catch(...) {} // just eat the exceptions
+    // Don't let exceptions leave the descructor
+    try
+    {
+        while (_head)
+        {
+            node * temp = _head;
+            _head = _head->_next;
+            delete temp;
+        }
+    }
+    catch(...) {} // just eat the exceptions
 }
 
 } // end namespace cc

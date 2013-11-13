@@ -7,13 +7,13 @@ namespace cc
 
 void testBinarySearch()
 {
-	int arr[] =  { 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 };
-	int length = sizeof(arr)/sizeof(int);
-	cc::printArray("int array for binary search", arr, 0, length - 1);
-	std::cout << "Value 9 was " << (cc::binarysearch(arr, length, 9) ? "found" : "not found") << std::endl;
-	std::cout << "Value 20 was " << (cc::binarysearch(arr, length, 20) ? "found" : "not found") << std::endl;
-	std::cout << "Recursive binary index of value 16 is " << cc::binarysearchrecursive(arr, 0, length - 1, 16) << std::endl;
-	std::cout << "Recursive binary index of value 17 is " << cc::binarysearchrecursive(arr, 0, length - 1, 17) << std::endl;
+    int arr[] =  { 1, 4, 9, 16, 25, 36, 49, 64, 81, 100 };
+    int length = sizeof(arr)/sizeof(int);
+    cc::printArray("int array for binary search", arr, 0, length - 1);
+    std::cout << "Value 9 was " << (cc::binarysearch(arr, length, 9) ? "found" : "not found") << std::endl;
+    std::cout << "Value 20 was " << (cc::binarysearch(arr, length, 20) ? "found" : "not found") << std::endl;
+    std::cout << "Recursive binary index of value 16 is " << cc::binarysearchrecursive(arr, 0, length - 1, 16) << std::endl;
+    std::cout << "Recursive binary index of value 17 is " << cc::binarysearchrecursive(arr, 0, length - 1, 17) << std::endl;
 }
 
 // Binary Search (assumes list is sorted)
@@ -30,7 +30,7 @@ void testBinarySearch()
 bool binarysearch(int *arrayOfInts, int length, int intToFind)
 {
     if (length == 0)
-    	return false;
+        return false;
 
     int left = 0;
     int right = length - 1;
@@ -39,11 +39,11 @@ bool binarysearch(int *arrayOfInts, int length, int intToFind)
     {
         int mid = (left + right) / 2;
         if (arrayOfInts[mid] == intToFind)
-        	return true;
+            return true;
         else if (arrayOfInts[mid] < intToFind)
-        	left = mid + 1;
+            left = mid + 1;
         else
-        	right = mid - 1;
+            right = mid - 1;
     }
     return false;
 }
@@ -51,16 +51,16 @@ bool binarysearch(int *arrayOfInts, int length, int intToFind)
 int binarysearchrecursive(int *arrayOfInts, int left, int right, int intToFind)
 {
     if (left > right)
-    	return -1; // couldn't find the element
+        return -1; // couldn't find the element
 
     int mid = (left + right) / 2;
 
     if (arrayOfInts[mid] == intToFind)
-    	return mid; // found our value, return the index
+        return mid; // found our value, return the index
     else if (intToFind < arrayOfInts[mid])
-    	return binarysearchrecursive(arrayOfInts, left, mid - 1, intToFind);
+        return binarysearchrecursive(arrayOfInts, left, mid - 1, intToFind);
     else
-    	return binarysearchrecursive(arrayOfInts, mid + 1, right, intToFind);
+        return binarysearchrecursive(arrayOfInts, mid + 1, right, intToFind);
 }
 
 } // end namespace cc
