@@ -17,6 +17,8 @@ public:
     converter();
     virtual ~converter();
 
+    static void test();
+
     static long atol(const char* input);
 
     static std::string ltoa(int32_t input);

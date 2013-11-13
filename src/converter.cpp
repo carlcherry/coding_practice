@@ -35,6 +35,58 @@ converter::converter() {
 converter::~converter() {
 }
 
+void converter::test() {
+    long result = 0;
+    if ((result = string::converter::atol("-235")) != -235) {
+        std::cout << "atol(\"-235\") returned " << result << std::endl;
+    }
+    if ((result = string::converter::atol("10429")) != 10429) {
+        std::cout << "atol(\"10429\") returned " << result << std::endl;
+    }
+    if ((result = string::converter::atol("0")) != 0) {
+        std::cout << "atol(\"0\") returned " << result << std::endl;
+    }
+    if ((result = string::converter::atol("-1")) != -1) {
+        std::cout << "atol(\"-1\") returned " << result << std::endl;
+    }
+    if ((result = string::converter::atol("1")) != 1) {
+        std::cout << "atol(\"1\") returned " << result << std::endl;
+    }
+    std::string sResult;
+    sResult = string::converter::ltoa(235);
+    if (sResult != "235") {
+        std::cout << "ltoa(235) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(1);
+    if (sResult != "1") {
+        std::cout << "ltoa(1) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(-1);
+    if (sResult != "-1") {
+        std::cout << "ltoa(-1) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(-1000);
+    if (sResult != "-1000") {
+        std::cout << "ltoa(-1000) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(-2);
+    if (sResult != "-2") {
+        std::cout << "ltoa(-2) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(-2000000);
+    if (sResult != "-2000000") {
+        std::cout << "ltoa(-2000000) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(2147483647);
+    if (sResult != "2147483647") {
+        std::cout << "ltoa(2147483647) returned " << sResult << std::endl;
+    }
+    sResult = string::converter::ltoa(-2147483648);
+    if (sResult != "-2147483648") {
+        std::cout << "ltoa(-2147483648) returned " << sResult << std::endl;
+    }
+}
+
 long converter::atol(const char* input) {
     bool negate = (input[0] == '-');
     long result = convert_to_long(negate ? ++input : input);
