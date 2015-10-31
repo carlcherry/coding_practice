@@ -6,8 +6,6 @@
  * here is a comment for Andrew
  */
 
-// Here is a comment for Andrew
-
 #include "binarysearchtree.h"
 #include <iostream>
 
