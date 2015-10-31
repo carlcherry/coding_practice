@@ -3,7 +3,10 @@
  *
  *  Created on: 2013-01-22
  *      Author: carl
+ * here is a comment for Andrew
  */
+
+// Here is a comment for Andrew
 
 #include "binarysearchtree.h"
 #include <iostream>
@@ -162,6 +165,3 @@ void testTree()
 }
 
 } // end namespace cc
-
-
-
