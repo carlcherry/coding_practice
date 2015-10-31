@@ -1,0 +1,182 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BINARYSEARCHTREE_H_	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^#define BINARYSEARCHTREE_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^namespace cc$/;"	namespace	line:11
+bst	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^class bst {$/;"	class	line:15	namespace:cc
+node	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^    class node {$/;"	class	line:16	class:cc::bst
+_data	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^        int _data;$/;"	member	line:19	class:cc::bst::node
+left	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^        node *left;$/;"	member	line:20	class:cc::bst::node
+right	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^        node *right;$/;"	member	line:21	class:cc::bst::node
+node	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^        node(int data) : _data(data), left(0), right(0) {}$/;"	function	line:22	class:cc::bst::node	signature:(int data)
+_root	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^    node *_root;$/;"	member	line:24	class:cc::bst
+bst	/Users/ccherry/carl/src/coding_practice/include/binarysearchtree.h	/^    bst() : _root(0) {}$/;"	function	line:27	class:cc::bst	signature:()
+CCUTILITIES_H_	/Users/ccherry/carl/src/coding_practice/include/ccutilities.h	/^#define CCUTILITIES_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/ccutilities.h	/^namespace cc$/;"	namespace	line:13
+CONVERTER_H_	/Users/ccherry/carl/src/coding_practice/include/converter.h	/^#define CONVERTER_H_$/;"	macro	line:9
+string	/Users/ccherry/carl/src/coding_practice/include/converter.h	/^namespace string {$/;"	namespace	line:13
+converter	/Users/ccherry/carl/src/coding_practice/include/converter.h	/^class converter {$/;"	class	line:15	namespace:string
+__CC_GRAPH_H_	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^#define __CC_GRAPH_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^namespace cc {$/;"	namespace	line:15
+edge	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^class edge$/;"	class	line:19	namespace:cc
+_edgeLabel	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   std::string _edgeLabel;$/;"	member	line:21	class:cc::edge
+edge	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   edge(std::string edgeName) : _edgeLabel(edgeName) {}$/;"	function	line:25	class:cc::edge	signature:(std::string edgeName)
+ccvertex	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^class ccvertex$/;"	class	line:29	namespace:cc
+_label	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   std::string _label;$/;"	member	line:33	class:cc::ccvertex
+_edges	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   std::list<cc::edge*> _edges;$/;"	member	line:34	class:cc::ccvertex
+ccvertex	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   ccvertex(std::string name) : _label(name) {}$/;"	function	line:35	class:cc::ccvertex	signature:(std::string name)
+ccgraph	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^class ccgraph$/;"	class	line:41	namespace:cc
+_vertices	/Users/ccherry/carl/src/coding_practice/include/graph.h	/^   std::map<std::string, ccvertex*> _vertices;$/;"	member	line:53	class:cc::ccgraph
+HEADSORT_H_	/Users/ccherry/carl/src/coding_practice/include/headsort.h	/^#define HEADSORT_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/headsort.h	/^namespace cc {$/;"	namespace	line:11
+__CC_HEAP_H_	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^#define __CC_HEAP_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^namespace cc$/;"	namespace	line:11
+heap	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^class heap$/;"	class	line:16	namespace:cc
+length	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^    int length;$/;"	member	line:27	class:cc::heap
+heaparray	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^    int *heaparray;$/;"	member	line:28	class:cc::heap
+heapSize	/Users/ccherry/carl/src/coding_practice/include/heap.h	/^    int heapSize;$/;"	member	line:29	class:cc::heap
+INSERTIONSORT_H_	/Users/ccherry/carl/src/coding_practice/include/insertionsort.h	/^#define INSERTIONSORT_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/insertionsort.h	/^namespace cc$/;"	namespace	line:11
+__CC_LIST_H_	/Users/ccherry/carl/src/coding_practice/include/list.h	/^#define __CC_LIST_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/list.h	/^namespace cc$/;"	namespace	line:11
+list	/Users/ccherry/carl/src/coding_practice/include/list.h	/^class list$/;"	class	line:16	namespace:cc
+listnode	/Users/ccherry/carl/src/coding_practice/include/list.h	/^    class listnode$/;"	class	line:18	class:cc::list
+_data	/Users/ccherry/carl/src/coding_practice/include/list.h	/^        int _data;$/;"	member	line:21	class:cc::list::listnode
+prev	/Users/ccherry/carl/src/coding_practice/include/list.h	/^        listnode *prev;$/;"	member	line:22	class:cc::list::listnode
+next	/Users/ccherry/carl/src/coding_practice/include/list.h	/^        listnode *next;$/;"	member	line:23	class:cc::list::listnode
+_head	/Users/ccherry/carl/src/coding_practice/include/list.h	/^    listnode *_head;$/;"	member	line:26	class:cc::list
+_tail	/Users/ccherry/carl/src/coding_practice/include/list.h	/^    listnode *_tail;$/;"	member	line:27	class:cc::list
+MERGESORT_H_	/Users/ccherry/carl/src/coding_practice/include/mergesort.h	/^#define MERGESORT_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/mergesort.h	/^namespace cc$/;"	namespace	line:11
+PUZZLES_H_	/Users/ccherry/carl/src/coding_practice/include/puzzles.h	/^#define PUZZLES_H_$/;"	macro	line:9
+puzzles	/Users/ccherry/carl/src/coding_practice/include/puzzles.h	/^namespace puzzles {$/;"	namespace	line:11
+__CC_QUICKSORT_H_	/Users/ccherry/carl/src/coding_practice/include/quicksort.h	/^#define __CC_QUICKSORT_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/quicksort.h	/^namespace cc$/;"	namespace	line:11
+__CC_SELECTION_SORT__	/Users/ccherry/carl/src/coding_practice/include/selectionsort.h	/^#define __CC_SELECTION_SORT__$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/selectionsort.h	/^namespace cc$/;"	namespace	line:11
+__CC_STACK_H_	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^#define __CC_STACK_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^namespace cc$/;"	namespace	line:11
+stack	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^class stack$/;"	class	line:15	namespace:cc
+node	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^   struct node$/;"	struct	line:18	class:cc::stack
+_data	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^      int _data;$/;"	member	line:20	struct:cc::stack::node
+_next	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^      node * _next;$/;"	member	line:21	struct:cc::stack::node
+_head	/Users/ccherry/carl/src/coding_practice/include/stack.h	/^   node *_head;$/;"	member	line:24	class:cc::stack
+TESTBITWISE_H_	/Users/ccherry/carl/src/coding_practice/include/testbitwise.h	/^#define TESTBITWISE_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/testbitwise.h	/^namespace cc {$/;"	namespace	line:11
+__CC_TESTSEARCH_H_	/Users/ccherry/carl/src/coding_practice/include/testsearch.h	/^#define __CC_TESTSEARCH_H_$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/include/testsearch.h	/^namespace cc$/;"	namespace	line:11
+CC	/Users/ccherry/carl/src/coding_practice/Makefile	/^CC     = gcc$/;"	macro	line:1
+CFLAGS	/Users/ccherry/carl/src/coding_practice/Makefile	/^CFLAGS = -Wall -I.\/include$/;"	macro	line:2
+CPPFLAGS	/Users/ccherry/carl/src/coding_practice/Makefile	/^CPPFLAGS = -g $/;"	macro	line:3
+LDFLAGS	/Users/ccherry/carl/src/coding_practice/Makefile	/^LDFLAGS = $/;"	macro	line:4
+TARGET	/Users/ccherry/carl/src/coding_practice/Makefile	/^TARGET  = practice$/;"	macro	line:5
+SOURCES	/Users/ccherry/carl/src/coding_practice/Makefile	/^SOURCES = $(shell echo .\/src\/*.cpp)$/;"	macro	line:6
+HEADERS	/Users/ccherry/carl/src/coding_practice/Makefile	/^HEADERS = $(shell echo .\/include\/*.h)$/;"	macro	line:7
+OBJECTS	/Users/ccherry/carl/src/coding_practice/Makefile	/^OBJECTS = $(SOURCES:.cpp=.o)$/;"	macro	line:8
+LIBS	/Users/ccherry/carl/src/coding_practice/Makefile	/^LIBS = -lstdc++$/;"	macro	line:9
+cc	/Users/ccherry/carl/src/coding_practice/src/ccutilities.cpp	/^namespace cc$/;"	namespace	line:10	file:
+printArray	/Users/ccherry/carl/src/coding_practice/src/ccutilities.cpp	/^void printArray(std::string message, int *inputArray, int start, int end)$/;"	function	line:13	namespace:cc	signature:(std::string message, int *inputArray, int start, int end)
+encoding_table	/Users/ccherry/carl/src/coding_practice/src/ccutilities.cpp	/^static char encoding_table[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',$/;"	member	line:24	namespace:cc	file:
+base64_encode	/Users/ccherry/carl/src/coding_practice/src/ccutilities.cpp	/^std::string base64_encode(const unsigned char* input, int length)$/;"	function	line:33	namespace:cc	signature:(const unsigned char* input, int length)
+test_base64	/Users/ccherry/carl/src/coding_practice/src/ccutilities.cpp	/^void test_base64()$/;"	function	line:85	namespace:cc	signature:()
+string	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^namespace string {$/;"	namespace	line:13	file:
+_convert_to_long	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^long _convert_to_long(const char *input, long val)$/;"	function	line:16	namespace:string	signature:(const char *input, long val)
+convert_to_long	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^long convert_to_long(const char *pInput) {$/;"	function	line:28	namespace:string	signature:(const char *pInput)
+converter	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^converter::converter() {$/;"	function	line:32	class:string::converter	signature:()
+~converter	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^converter::~converter() {$/;"	function	line:35	class:string::converter	signature:()
+test	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^void converter::test() {$/;"	function	line:38	class:string::converter	signature:()
+atol	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^long converter::atol(const char* input) {$/;"	function	line:90	class:string::converter	signature:(const char* input)
+ltoa	/Users/ccherry/carl/src/coding_practice/src/converter.cpp	/^std::string converter::ltoa(int32_t input)$/;"	function	line:96	class:string::converter	signature:(int32_t input)
+puzzles	/Users/ccherry/carl/src/coding_practice/src/findduplicatenumbers.cpp	/^namespace puzzles {$/;"	namespace	line:10	file:
+findDuplicateNumbers	/Users/ccherry/carl/src/coding_practice/src/findduplicatenumbers.cpp	/^bool findDuplicateNumbers(int* input1, int length1, int * input2, int lengh2)$/;"	function	line:12	namespace:puzzles	signature:(int* input1, int length1, int * input2, int lengh2)
+puzzles	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^namespace puzzles {$/;"	namespace	line:14	file:
+partition	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^int partition(int *input, int left, int right)$/;"	function	line:16	namespace:puzzles	signature:(int *input, int left, int right)
+kth_element	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^int kth_element(int *input, int left, int right, int k)$/;"	function	line:45	namespace:puzzles	signature:(int *input, int left, int right, int k)
+findKthElementUsingArray	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^void findKthElementUsingArray(int* input, int length, int k)$/;"	function	line:64	namespace:puzzles	signature:(int* input, int length, int k)
+findKthElementUsingSTL	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^void findKthElementUsingSTL(std::vector<int> input, int k)$/;"	function	line:82	namespace:puzzles	signature:(std::vector<int> input, int k)
+findKthElementTest	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^void findKthElementTest(int k)$/;"	function	line:97	namespace:puzzles	signature:(int k)
+findKthElementTest	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^void findKthElementTest(bool useSTL)$/;"	function	line:103	namespace:puzzles	signature:(bool useSTL)
+findKthElement	/Users/ccherry/carl/src/coding_practice/src/findkthelement.cpp	/^void findKthElement(int length, int k, bool useSTL)$/;"	function	line:110	namespace:puzzles	signature:(int length, int k, bool useSTL)
+maxSize	/Users/ccherry/carl/src/coding_practice/src/findsecondlargestelement.cpp	/^long maxSize = 1000000000;$/;"	variable	line:12
+test1	/Users/ccherry/carl/src/coding_practice/src/findsecondlargestelement.cpp	/^void test1()$/;"	function	line:14	signature:()
+test2	/Users/ccherry/carl/src/coding_practice/src/findsecondlargestelement.cpp	/^void test2()$/;"	function	line:40	signature:()
+puzzles	/Users/ccherry/carl/src/coding_practice/src/findsecondlargestelement.cpp	/^namespace puzzles {$/;"	namespace	line:62	file:
+findSecondLargestElement	/Users/ccherry/carl/src/coding_practice/src/findsecondlargestelement.cpp	/^void findSecondLargestElement()$/;"	function	line:64	namespace:puzzles	signature:()
+cc	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^namespace cc {$/;"	namespace	line:14	file:
+~edge	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^edge::~edge()$/;"	function	line:16	class:cc::edge	signature:()
+add_edge	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^void ccvertex::add_edge(std::string vertexName)$/;"	function	line:21	class:cc::ccvertex	signature:(std::string vertexName)
+~ccvertex	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^ccvertex::~ccvertex()$/;"	function	line:32	class:cc::ccvertex	signature:()
+edge_count	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^int ccvertex::edge_count()$/;"	function	line:40	class:cc::ccvertex	signature:()
+ccgraph	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^ccgraph::ccgraph()$/;"	function	line:50	class:cc::ccgraph	signature:()
+~ccgraph	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^ccgraph::~ccgraph()$/;"	function	line:54	class:cc::ccgraph	signature:()
+num_vertices	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^int ccgraph::num_vertices()$/;"	function	line:58	class:cc::ccgraph	signature:()
+num_edges	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^int ccgraph::num_edges()$/;"	function	line:62	class:cc::ccgraph	signature:()
+insert_edge	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^void ccgraph::insert_edge(const char* pVertex1, const char* pVertex2, bool directed)$/;"	function	line:72	class:cc::ccgraph	signature:(const char* pVertex1, const char* pVertex2, bool directed)
+bfsloop	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^std::map<std::string,std::string> ccgraph::bfsloop(std::string start, std::string end)$/;"	function	line:106	class:cc::ccgraph	signature:(std::string start, std::string end)
+print_path	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^    void print_path(std::map<std::string,std::string>& parent, std::string start, std::string end)$/;"	function	line:202	namespace:cc	signature:(std::map<std::string,std::string>& parent, std::string start, std::string end)
+testMaze	/Users/ccherry/carl/src/coding_practice/src/graph.cpp	/^    void testMaze()$/;"	function	line:218	namespace:cc	signature:()
+cc	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^namespace cc {$/;"	namespace	line:12	file:
+testHeap	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^void testHeap()$/;"	function	line:14	namespace:cc	signature:()
+heap	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^heap::heap()$/;"	function	line:44	class:cc::heap	signature:()
+~heap	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^heap::~heap()$/;"	function	line:52	class:cc::heap	signature:()
+delete_heap	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^void heap::delete_heap()$/;"	function	line:57	class:cc::heap	signature:()
+reserve	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^void heap::reserve(int maxSize)$/;"	function	line:66	class:cc::heap	signature:(int maxSize)
+insert	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^void heap::insert(int value)$/;"	function	line:74	class:cc::heap	signature:(int value)
+delete_max	/Users/ccherry/carl/src/coding_practice/src/heap.cpp	/^int heap::delete_max()$/;"	function	line:90	class:cc::heap	signature:()
+cc	/Users/ccherry/carl/src/coding_practice/src/insertionsort.cpp	/^namespace cc$/;"	namespace	line:14	file:
+test_insertion_sort	/Users/ccherry/carl/src/coding_practice/src/insertionsort.cpp	/^void test_insertion_sort()$/;"	function	line:29	namespace:cc	signature:()
+insertionsort	/Users/ccherry/carl/src/coding_practice/src/insertionsort.cpp	/^void insertionsort(int *arrayToSort, int length)$/;"	function	line:38	namespace:cc	signature:(int *arrayToSort, int length)
+cc	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^namespace cc$/;"	namespace	line:11	file:
+testList	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^void testList()$/;"	function	line:14	namespace:cc	signature:()
+listnode	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^list::listnode::listnode(int data, listnode* p, listnode* n) : _data(data), prev(p), next(n)$/;"	function	line:26	class:cc::list::listnode	signature:(int data, listnode* p, listnode* n)
+list	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^list::list() : _head(0), _tail(0)$/;"	function	line:35	class:cc::list	signature:()
+~list	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^list::~list()$/;"	function	line:39	class:cc::list	signature:()
+empty	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^bool list::empty() const$/;"	function	line:50	class:cc::list	signature:() const
+pop_back	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^int list::pop_back()$/;"	function	line:55	class:cc::list	signature:()
+pop_front	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^int list::pop_front()$/;"	function	line:80	class:cc::list	signature:()
+push_back	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^void list::push_back(int data)$/;"	function	line:105	class:cc::list	signature:(int data)
+push_front	/Users/ccherry/carl/src/coding_practice/src/list.cpp	/^void list::push_front(int data)$/;"	function	line:113	class:cc::list	signature:(int data)
+main	/Users/ccherry/carl/src/coding_practice/src/main.cpp	/^int main(int argc, char **argv)$/;"	function	line:13	signature:(int argc, char **argv)
+cc	/Users/ccherry/carl/src/coding_practice/src/mergesort.cpp	/^namespace cc$/;"	namespace	line:10	file:
+testMergeSort	/Users/ccherry/carl/src/coding_practice/src/mergesort.cpp	/^void testMergeSort()$/;"	function	line:12	namespace:cc	signature:()
+merge	/Users/ccherry/carl/src/coding_practice/src/mergesort.cpp	/^void merge(int *arrayToSort, int low, int middle, int high)$/;"	function	line:25	namespace:cc	signature:(int *arrayToSort, int low, int middle, int high)
+merge_sort	/Users/ccherry/carl/src/coding_practice/src/mergesort.cpp	/^void merge_sort(int *arrayToSort, int low, int high)$/;"	function	line:72	namespace:cc	signature:(int *arrayToSort, int low, int high)
+cc	/Users/ccherry/carl/src/coding_practice/src/quicksort.cpp	/^namespace cc$/;"	namespace	line:12	file:
+testQuickSort	/Users/ccherry/carl/src/coding_practice/src/quicksort.cpp	/^void testQuickSort()$/;"	function	line:25	namespace:cc	signature:()
+partition	/Users/ccherry/carl/src/coding_practice/src/quicksort.cpp	/^int partition(int *arrayToSort, int low, int high)$/;"	function	line:34	namespace:cc	signature:(int *arrayToSort, int low, int high)
+partition2	/Users/ccherry/carl/src/coding_practice/src/quicksort.cpp	/^int partition2(int *arrayToSort, int low, int high)$/;"	function	line:66	namespace:cc	signature:(int *arrayToSort, int low, int high)
+quicksort	/Users/ccherry/carl/src/coding_practice/src/quicksort.cpp	/^void quicksort(int *arrayToSort, int low, int high)$/;"	function	line:82	namespace:cc	signature:(int *arrayToSort, int low, int high)
+cc	/Users/ccherry/carl/src/coding_practice/src/selectionsort.cpp	/^namespace cc$/;"	namespace	line:14	file:
+testSelectionSort	/Users/ccherry/carl/src/coding_practice/src/selectionsort.cpp	/^void testSelectionSort()$/;"	function	line:17	namespace:cc	signature:()
+selectionsort	/Users/ccherry/carl/src/coding_practice/src/selectionsort.cpp	/^void selectionsort(int *arrayToSort, int length)$/;"	function	line:37	namespace:cc	signature:(int *arrayToSort, int length)
+selectionsort2	/Users/ccherry/carl/src/coding_practice/src/selectionsort.cpp	/^void selectionsort2(int *input, int length)$/;"	function	line:57	namespace:cc	signature:(int *input, int length)
+findsecondlargestelement	/Users/ccherry/carl/src/coding_practice/src/selectionsort.cpp	/^int findsecondlargestelement(int *arrayToSort, int length)$/;"	function	line:76	namespace:cc	signature:(int *arrayToSort, int length)
+cc	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^namespace cc$/;"	namespace	line:10	file:
+testStack	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^void testStack()$/;"	function	line:13	namespace:cc	signature:()
+node	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^stack::node::node(int data, node *next)$/;"	function	line:29	class:cc::stack::node	signature:(int data, node *next)
+pop	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^int stack::pop()$/;"	function	line:34	class:cc::stack	signature:()
+push	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^void stack::push(int data)$/;"	function	line:46	class:cc::stack	signature:(int data)
+empty	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^bool stack::empty()$/;"	function	line:51	class:cc::stack	signature:()
+stack	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^stack::stack()$/;"	function	line:56	class:cc::stack	signature:()
+~stack	/Users/ccherry/carl/src/coding_practice/src/stack.cpp	/^stack::~stack()$/;"	function	line:61	class:cc::stack	signature:()
+cc	/Users/ccherry/carl/src/coding_practice/src/testbitwise.cpp	/^namespace cc {$/;"	namespace	line:11	file:
+testbitwise	/Users/ccherry/carl/src/coding_practice/src/testbitwise.cpp	/^void testbitwise()$/;"	function	line:13	namespace:cc	signature:()
+countbits	/Users/ccherry/carl/src/coding_practice/src/testbitwise.cpp	/^int countbits(int number)$/;"	function	line:23	namespace:cc	signature:(int number)
+printTrueFalse	/Users/ccherry/carl/src/coding_practice/src/testbitwise.cpp	/^void printTrueFalse(int number, int numBits)$/;"	function	line:35	namespace:cc	signature:(int number, int numBits)
+printTruthTable	/Users/ccherry/carl/src/coding_practice/src/testbitwise.cpp	/^void printTruthTable(int number)$/;"	function	line:45	namespace:cc	signature:(int number)
+cc	/Users/ccherry/carl/src/coding_practice/src/testsearch.cpp	/^namespace cc$/;"	namespace	line:5	file:
+testBinarySearch	/Users/ccherry/carl/src/coding_practice/src/testsearch.cpp	/^void testBinarySearch()$/;"	function	line:8	namespace:cc	signature:()
+binarysearch	/Users/ccherry/carl/src/coding_practice/src/testsearch.cpp	/^bool binarysearch(int *arrayOfInts, int length, int intToFind)$/;"	function	line:30	namespace:cc	signature:(int *arrayOfInts, int length, int intToFind)
+binarysearchrecursive	/Users/ccherry/carl/src/coding_practice/src/testsearch.cpp	/^int binarysearchrecursive(int *arrayOfInts, int left, int right, int intToFind)$/;"	function	line:51	namespace:cc	signature:(int *arrayOfInts, int left, int right, int intToFind)
+cc	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^namespace cc$/;"	namespace	line:15	file:
+findNode	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^bst::node* bst::findNode(const int data, node* tree)$/;"	function	line:18	class:cc::bst	signature:(const int data, node* tree)
+print_inorder	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void bst::print_inorder()$/;"	function	line:33	class:cc::bst	signature:()
+print_inorder	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void bst::print_inorder(node* tree)$/;"	function	line:44	class:cc::bst	signature:(node* tree)
+insert	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void bst::insert(const int data)$/;"	function	line:53	class:cc::bst	signature:(const int data)
+find	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^bool bst::find(const int data, int& outData)$/;"	function	line:96	class:cc::bst	signature:(const int data, int& outData)
+insertR	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void bst::insertR(const int data)$/;"	function	line:112	class:cc::bst	signature:(const int data)
+insertR	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void bst::insertR(const int data, node*& tree)$/;"	function	line:118	class:cc::bst	signature:(const int data, node*& tree)
+testTree	/Users/ccherry/carl/src/coding_practice/src/binarysearchtree.cpp	/^void testTree()$/;"	function	line:135	namespace:cc	signature:()
