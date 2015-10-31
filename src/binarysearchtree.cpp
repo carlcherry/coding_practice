@@ -8,6 +8,7 @@
 
 // OK - an new test for Andrews
 // And yet another one
+// Here is yet a 3th change.
 
 #include "binarysearchtree.h"
 #include <iostream>
